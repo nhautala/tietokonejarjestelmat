@@ -1,0 +1,972 @@
+
+**** Clean-only build of configuration Debug for project empty_CC2650STK_TI ****
+
+/home/linuxlite/ti/ccs1040/ccs/utils/bin/gmake -k -j 2 clean -O 
+ 
+rm -rf  "empty_CC2650STK_TI.hex"  "configPkg/linker.cmd" "configPkg/compiler.opt"  "empty_CC2650STK_TI.out" 
+rm -rf "CC2650STK.obj" "ccfg.obj" "project_main.obj" "sensors/bmp280.obj" "sensors/hdc1000.obj" "sensors/mpu9250.obj" "sensors/opt3001.obj" "sensors/tmp007.obj" "wireless/CWC_CC2650_154Drv.obj" "wireless/CWC_IntegrTest.obj" "wireless/ERRORS.obj" "wireless/comm_lib.obj" 
+rm -rf "CC2650STK.d" "ccfg.d" "project_main.d" "sensors/bmp280.d" "sensors/hdc1000.d" "sensors/mpu9250.d" "sensors/opt3001.d" "sensors/tmp007.d" "wireless/CWC_CC2650_154Drv.d" "wireless/CWC_IntegrTest.d" "wireless/ERRORS.d" "wireless/comm_lib.d" 
+rm -rf  "configPkg/" 
+Finished clean
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project empty_CC2650STK_TI ****
+
+/home/linuxlite/ti/ccs1040/ccs/utils/bin/gmake -k -j 2 all -O 
+ 
+Building file: "../empty.cfg"
+Invoking: XDCtools
+"/home/linuxlite/ti/xdctools_3_32_00_06_core/xs" --xdcpath="/home/linuxlite/ti/tirtos_cc13xx_cc26xx_2_21_01_08/packages;/home/linuxlite/ti/tirtos_cc13xx_cc26xx_2_21_01_08/products/tidrivers_cc13xx_cc26xx_2_21_01_01/packages;/home/linuxlite/ti/tirtos_cc13xx_cc26xx_2_21_01_08/products/bios_6_46_01_38/packages;/home/linuxlite/ti/tirtos_cc13xx_cc26xx_2_21_01_08/products/uia_2_01_00_01/packages;" xdc.tools.configuro -o configPkg -t ti.targets.arm.elf.M3 -p ti.platforms.simplelink:CC2650F128 -r release -c "/home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS" --compileOptions "-mv7M3 --code_state=16 --float_support=none -me --include_path=\"/home/linuxlite/Downloads/sensortag-main/empty_CC2650STK_TI\" --include_path=\"/home/linuxlite/Downloads/sensortag-main/empty_CC2650STK_TI\" --include_path=\"/home/linuxlite/ti/tirtos_cc13xx_cc26xx_2_21_01_08/products/cc26xxware_2_24_03_17272\" --include_path=\"/home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include\" --define=ccs -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi  " "../empty.cfg"
+making package.mak (because of package.bld) ...
+generating interfaces for package configPkg (because package/package.xdc.inc is older than package.xdc) ...
+configuring empty.xem3 from package/cfg/empty_pem3.cfg ...
+generating custom ROM library makefile ... 
+Starting build of library sources ...
+making /home/linuxlite/Downloads/sensortag-main/empty_CC2650STK_TI/src/sysbios/rom_sysbios.aem3 ...
+gmake[1]: Entering directory `/home/linuxlite/Downloads/sensortag-main/empty_CC2650STK_TI/src/sysbios'
+clem3 /home/linuxlite/ti/tirtos_cc13xx_cc26xx_2_21_01_08/products/bios_6_46_01_38/packages/ti/sysbios/BIOS.c ...
+asmem3 /home/linuxlite/ti/tirtos_cc13xx_cc26xx_2_21_01_08/products/bios_6_46_01_38/packages/ti/sysbios/family/arm/m3/Hwi_asm.sv7M ...
+asmem3 /home/linuxlite/ti/tirtos_cc13xx_cc26xx_2_21_01_08/products/bios_6_46_01_38/packages/ti/sysbios/family/arm/m3/Hwi_asm_switch.sv7M ...
+asmem3 /home/linuxlite/ti/tirtos_cc13xx_cc26xx_2_21_01_08/products/bios_6_46_01_38/packages/ti/sysbios/family/arm/m3/IntrinsicsSupport_asm.sv7M ...
+asmem3 /home/linuxlite/ti/tirtos_cc13xx_cc26xx_2_21_01_08/products/bios_6_46_01_38/packages/ti/sysbios/family/arm/m3/TaskSupport_asm.sv7M ...
+arem3 rom_sysbios.obj m3_Hwi_asm.obj m3_Hwi_asm_switch.obj m3_IntrinsicsSupport_asm.obj m3_TaskSupport_asm.obj ...
+gmake[1]: Leaving directory `/home/linuxlite/Downloads/sensortag-main/empty_CC2650STK_TI/src/sysbios'
+Build of libraries done.
+clem3 package/cfg/empty_pem3.c ...
+"package/cfg/empty_pem3.c", line 7971: warning #112-D: statement is unreachable
+Finished building: "../empty.cfg"
+ 
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[1]: Nothing to be done for 'all'.
+Building file: "../ccfg.c"
+Invoking: Arm Compiler
+"/home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=none -me --include_path="/home/linuxlite/Downloads/sensortag-main/empty_CC2650STK_TI" --include_path="/home/linuxlite/Downloads/sensortag-main/empty_CC2650STK_TI" --include_path="/home/linuxlite/ti/tirtos_cc13xx_cc26xx_2_21_01_08/products/cc26xxware_2_24_03_17272" --include_path="/home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include" --define=ccs -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="ccfg.d_raw" --cmd_file="configPkg/compiler.opt"  "../ccfg.c"
+Finished building: "../ccfg.c"
+ 
+Building file: "../project_main.c"
+Invoking: Arm Compiler
+"/home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=none -me --include_path="/home/linuxlite/Downloads/sensortag-main/empty_CC2650STK_TI" --include_path="/home/linuxlite/Downloads/sensortag-main/empty_CC2650STK_TI" --include_path="/home/linuxlite/ti/tirtos_cc13xx_cc26xx_2_21_01_08/products/cc26xxware_2_24_03_17272" --include_path="/home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include" --define=ccs -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="project_main.d_raw" --cmd_file="configPkg/compiler.opt"  "../project_main.c"
+"../project_main.c", line 149: warning #225-D: function "bmp280_setup" declared implicitly
+"../project_main.c", line 169: warning #225-D: function "bmp280_get_data" declared implicitly
+"../project_main.c", line 192: warning #112-D: statement is unreachable
+"../project_main.c", line 125: warning #179-D: variable "i2cMessage" was declared but never referenced
+Finished building: "../project_main.c"
+ 
+Building file: "../CC2650STK.c"
+Invoking: Arm Compiler
+"/home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=none -me --include_path="/home/linuxlite/Downloads/sensortag-main/empty_CC2650STK_TI" --include_path="/home/linuxlite/Downloads/sensortag-main/empty_CC2650STK_TI" --include_path="/home/linuxlite/ti/tirtos_cc13xx_cc26xx_2_21_01_08/products/cc26xxware_2_24_03_17272" --include_path="/home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include" --define=ccs -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="CC2650STK.d_raw" --cmd_file="configPkg/compiler.opt"  "../CC2650STK.c"
+Finished building: "../CC2650STK.c"
+ 
+Building file: "../sensors/bmp280.c"
+Invoking: Arm Compiler
+"/home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=none -me --include_path="/home/linuxlite/Downloads/sensortag-main/empty_CC2650STK_TI" --include_path="/home/linuxlite/Downloads/sensortag-main/empty_CC2650STK_TI" --include_path="/home/linuxlite/ti/tirtos_cc13xx_cc26xx_2_21_01_08/products/cc26xxware_2_24_03_17272" --include_path="/home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include" --define=ccs -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="sensors/bmp280.d_raw" --obj_directory="sensors" --cmd_file="configPkg/compiler.opt"  "../sensors/bmp280.c"
+Finished building: "../sensors/bmp280.c"
+ 
+Building file: "../sensors/hdc1000.c"
+Invoking: Arm Compiler
+"/home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=none -me --include_path="/home/linuxlite/Downloads/sensortag-main/empty_CC2650STK_TI" --include_path="/home/linuxlite/Downloads/sensortag-main/empty_CC2650STK_TI" --include_path="/home/linuxlite/ti/tirtos_cc13xx_cc26xx_2_21_01_08/products/cc26xxware_2_24_03_17272" --include_path="/home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include" --define=ccs -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="sensors/hdc1000.d_raw" --obj_directory="sensors" --cmd_file="configPkg/compiler.opt"  "../sensors/hdc1000.c"
+Finished building: "../sensors/hdc1000.c"
+ 
+Building file: "../sensors/opt3001.c"
+Invoking: Arm Compiler
+"/home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=none -me --include_path="/home/linuxlite/Downloads/sensortag-main/empty_CC2650STK_TI" --include_path="/home/linuxlite/Downloads/sensortag-main/empty_CC2650STK_TI" --include_path="/home/linuxlite/ti/tirtos_cc13xx_cc26xx_2_21_01_08/products/cc26xxware_2_24_03_17272" --include_path="/home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include" --define=ccs -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="sensors/opt3001.d_raw" --obj_directory="sensors" --cmd_file="configPkg/compiler.opt"  "../sensors/opt3001.c"
+Finished building: "../sensors/opt3001.c"
+ 
+Building file: "../sensors/tmp007.c"
+Invoking: Arm Compiler
+"/home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=none -me --include_path="/home/linuxlite/Downloads/sensortag-main/empty_CC2650STK_TI" --include_path="/home/linuxlite/Downloads/sensortag-main/empty_CC2650STK_TI" --include_path="/home/linuxlite/ti/tirtos_cc13xx_cc26xx_2_21_01_08/products/cc26xxware_2_24_03_17272" --include_path="/home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include" --define=ccs -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="sensors/tmp007.d_raw" --obj_directory="sensors" --cmd_file="configPkg/compiler.opt"  "../sensors/tmp007.c"
+Finished building: "../sensors/tmp007.c"
+ 
+Building file: "../sensors/mpu9250.c"
+Invoking: Arm Compiler
+"/home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=none -me --include_path="/home/linuxlite/Downloads/sensortag-main/empty_CC2650STK_TI" --include_path="/home/linuxlite/Downloads/sensortag-main/empty_CC2650STK_TI" --include_path="/home/linuxlite/ti/tirtos_cc13xx_cc26xx_2_21_01_08/products/cc26xxware_2_24_03_17272" --include_path="/home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include" --define=ccs -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="sensors/mpu9250.d_raw" --obj_directory="sensors" --cmd_file="configPkg/compiler.opt"  "../sensors/mpu9250.c"
+"../wireless/CWC_CC2650_154Drv.c", line 439: warning #515-D: a value of type "CWC_CC2650_IEEE154_simple_packet_struct_t *" cannot be assigned to an entity of type "uint8_t *"
+"../wireless/CWC_CC2650_154Drv.c", line 447: warning #112-D: statement is unreachable
+"../wireless/CWC_CC2650_154Drv.c", line 451: warning #112-D: statement is unreachable
+Finished building: "../sensors/mpu9250.c"
+ 
+Building file: "../wireless/CWC_CC2650_154Drv.c"
+Invoking: Arm Compiler
+"/home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=none -me --include_path="/home/linuxlite/Downloads/sensortag-main/empty_CC2650STK_TI" --include_path="/home/linuxlite/Downloads/sensortag-main/empty_CC2650STK_TI" --include_path="/home/linuxlite/ti/tirtos_cc13xx_cc26xx_2_21_01_08/products/cc26xxware_2_24_03_17272" --include_path="/home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include" --define=ccs -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="wireless/CWC_CC2650_154Drv.d_raw" --obj_directory="wireless" --cmd_file="configPkg/compiler.opt"  "../wireless/CWC_CC2650_154Drv.c"
+Finished building: "../wireless/CWC_CC2650_154Drv.c"
+ 
+Building file: "../wireless/ERRORS.c"
+Invoking: Arm Compiler
+"/home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=none -me --include_path="/home/linuxlite/Downloads/sensortag-main/empty_CC2650STK_TI" --include_path="/home/linuxlite/Downloads/sensortag-main/empty_CC2650STK_TI" --include_path="/home/linuxlite/ti/tirtos_cc13xx_cc26xx_2_21_01_08/products/cc26xxware_2_24_03_17272" --include_path="/home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include" --define=ccs -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="wireless/ERRORS.d_raw" --obj_directory="wireless" --cmd_file="configPkg/compiler.opt"  "../wireless/ERRORS.c"
+Finished building: "../wireless/ERRORS.c"
+ 
+Building file: "../wireless/CWC_IntegrTest.c"
+Invoking: Arm Compiler
+"/home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=none -me --include_path="/home/linuxlite/Downloads/sensortag-main/empty_CC2650STK_TI" --include_path="/home/linuxlite/Downloads/sensortag-main/empty_CC2650STK_TI" --include_path="/home/linuxlite/ti/tirtos_cc13xx_cc26xx_2_21_01_08/products/cc26xxware_2_24_03_17272" --include_path="/home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include" --define=ccs -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="wireless/CWC_IntegrTest.d_raw" --obj_directory="wireless" --cmd_file="configPkg/compiler.opt"  "../wireless/CWC_IntegrTest.c"
+"../wireless/CWC_IntegrTest.c", line 59: warning #112-D: statement is unreachable
+Finished building: "../wireless/CWC_IntegrTest.c"
+ 
+Building file: "../wireless/comm_lib.c"
+Invoking: Arm Compiler
+"/home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=none -me --include_path="/home/linuxlite/Downloads/sensortag-main/empty_CC2650STK_TI" --include_path="/home/linuxlite/Downloads/sensortag-main/empty_CC2650STK_TI" --include_path="/home/linuxlite/ti/tirtos_cc13xx_cc26xx_2_21_01_08/products/cc26xxware_2_24_03_17272" --include_path="/home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include" --define=ccs -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="wireless/comm_lib.d_raw" --obj_directory="wireless" --cmd_file="configPkg/compiler.opt"  "../wireless/comm_lib.c"
+"../wireless/comm_lib.c", line 141: warning #169-D: argument of type "volatile uint8_t *" is incompatible with parameter of type "uint8_t *"
+"../wireless/comm_lib.c", line 150: warning #515-D: a value of type "uint8_t *" cannot be assigned to an entity of type "int8_t"
+"../wireless/comm_lib.c", line 158: warning #515-D: a value of type "void *" cannot be assigned to an entity of type "int32_t"
+"../wireless/comm_lib.c", line 161: warning #169-D: argument of type "volatile uint8_t *" is incompatible with parameter of type "uint8_t *"
+"../wireless/comm_lib.c", line 195: warning #515-D: a value of type "uint8_t *" cannot be assigned to an entity of type "rfc_dataEntryGeneral_t *"
+"../wireless/comm_lib.c", line 196: warning #515-D: a value of type "uint8_t *" cannot be assigned to an entity of type "rfc_dataEntryGeneral_t *"
+"../wireless/comm_lib.c", line 197: warning #169-D: argument of type "rfc_dataEntryGeneral_t *" is incompatible with parameter of type "uint8_t *"
+"../wireless/comm_lib.c", line 199: warning #515-D: a value of type "rfc_dataEntryGeneral_t *" cannot be assigned to an entity of type "volatile uint8_t *"
+"../wireless/comm_lib.c", line 210: warning #515-D: a value of type "uint8_t *" cannot be assigned to an entity of type "rfc_dataEntryGeneral_t *"
+"../wireless/comm_lib.c", line 211: warning #515-D: a value of type "uint8_t *" cannot be assigned to an entity of type "rfc_dataEntryGeneral_t *"
+"../wireless/comm_lib.c", line 212: warning #169-D: argument of type "rfc_dataEntryGeneral_t *" is incompatible with parameter of type "uint8_t *"
+"../wireless/comm_lib.c", line 214: warning #515-D: a value of type "rfc_dataEntryGeneral_t *" cannot be assigned to an entity of type "volatile uint8_t *"
+"../wireless/comm_lib.c", line 246: warning #515-D: a value of type "uint8_t *" cannot be assigned to an entity of type "CWC_CC2650_IEEE154_simple_packet_struct_t *"
+"../wireless/comm_lib.c", line 248: warning #515-D: a value of type "uint8_t *" cannot be assigned to an entity of type "uint16_t *"
+"../wireless/comm_lib.c", line 275: warning #515-D: a value of type "uint8_t *" cannot be assigned to an entity of type "rfc_dataEntryGeneral_t *"
+Finished building: "../wireless/comm_lib.c"
+ 
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[2]: Nothing to be done for 'all'.
+Building target: "empty_CC2650STK_TI.out"
+Invoking: Arm Linker
+"/home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=none -me --define=ccs -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi -z -m"empty_CC2650STK_TI.map" --heap_size=0 --stack_size=256 -i"/home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/lib" -i"/home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="empty_CC2650STK_TI_linkInfo.xml" --rom_model -o "empty_CC2650STK_TI.out" "./CC2650STK.obj" "./ccfg.obj" "./project_main.obj" "./sensors/bmp280.obj" "./sensors/hdc1000.obj" "./sensors/mpu9250.obj" "./sensors/opt3001.obj" "./sensors/tmp007.obj" "./wireless/CWC_CC2650_154Drv.obj" "./wireless/CWC_IntegrTest.obj" "./wireless/ERRORS.obj" "./wireless/comm_lib.obj" "../CC2650STK.cmd" -l"configPkg/linker.cmd"  -l"/home/linuxlite/ti/tirtos_cc13xx_cc26xx_2_21_01_08/products/cc26xxware_2_24_03_17272/driverlib/bin/ccs/driverlib.lib" -llibc.a 
+<Linking>
+Finished building target: "empty_CC2650STK_TI.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project empty_CC2650STK_TI ****
+
+/home/linuxlite/ti/ccs1040/ccs/utils/bin/gmake -k -j 2 all -O 
+ 
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[1]: Nothing to be done for 'all'.
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[2]: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project empty_CC2650STK_TI ****
+
+/home/linuxlite/ti/ccs1040/ccs/utils/bin/gmake -k -j 2 all -O 
+ 
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[1]: Nothing to be done for 'all'.
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[2]: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project empty_CC2650STK_TI ****
+
+/home/linuxlite/ti/ccs1040/ccs/utils/bin/gmake -k -j 2 all -O 
+ 
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[1]: Nothing to be done for 'all'.
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[2]: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project empty_CC2650STK_TI ****
+
+/home/linuxlite/ti/ccs1040/ccs/utils/bin/gmake -k -j 2 all -O 
+ 
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[1]: Nothing to be done for 'all'.
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[2]: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project empty_CC2650STK_TI ****
+
+/home/linuxlite/ti/ccs1040/ccs/utils/bin/gmake -k -j 2 all -O 
+ 
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[1]: Nothing to be done for 'all'.
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[2]: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project empty_CC2650STK_TI ****
+
+/home/linuxlite/ti/ccs1040/ccs/utils/bin/gmake -k -j 2 all -O 
+ 
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[1]: Nothing to be done for 'all'.
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[2]: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project empty_CC2650STK_TI ****
+
+/home/linuxlite/ti/ccs1040/ccs/utils/bin/gmake -k -j 2 all -O 
+ 
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[1]: Nothing to be done for 'all'.
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[2]: Nothing to be done for 'all'.
+
+**** Build Finished ****
+Buildfile generation error occurred..
+Product com.ti.rtsc.TIRTOSCC13XX_CC26XX v2.21.0.06 is not currently installed and no compatible version is available. Please install this product or a compatible version.
+Build stopped..
+Buildfile generation error occurred..
+Product com.ti.rtsc.TIRTOSCC13XX_CC26XX v2.21.0.06 is not currently installed and no compatible version is available. Please install this product or a compatible version.
+Build stopped..
+
+**** Build of configuration Debug for project empty_CC2650STK_TI ****
+
+/home/linuxlite/ti/ccs1040/ccs/utils/bin/gmake -k -j 2 all -O 
+ 
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[1]: Nothing to be done for 'all'.
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[2]: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Clean-only build of configuration Debug for project empty_CC2650STK_TI ****
+
+/home/linuxlite/ti/ccs1040/ccs/utils/bin/gmake -k -j 2 clean -O 
+ 
+rm -rf  "empty_CC2650STK_TI.hex"  "configPkg/linker.cmd" "configPkg/compiler.opt"  "empty_CC2650STK_TI.out" 
+rm -rf "CC2650STK.obj" "ccfg.obj" "project_main.obj" "sensors/bmp280.obj" "sensors/hdc1000.obj" "sensors/mpu9250.obj" "sensors/opt3001.obj" "sensors/tmp007.obj" "wireless/CWC_CC2650_154Drv.obj" "wireless/CWC_IntegrTest.obj" "wireless/ERRORS.obj" "wireless/comm_lib.obj" 
+rm -rf "CC2650STK.d" "ccfg.d" "project_main.d" "sensors/bmp280.d" "sensors/hdc1000.d" "sensors/mpu9250.d" "sensors/opt3001.d" "sensors/tmp007.d" "wireless/CWC_CC2650_154Drv.d" "wireless/CWC_IntegrTest.d" "wireless/ERRORS.d" "wireless/comm_lib.d" 
+rm -rf  "configPkg/" 
+Finished clean
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project empty_CC2650STK_TI ****
+
+/home/linuxlite/ti/ccs1040/ccs/utils/bin/gmake -k -j 2 all -O 
+ 
+Building file: "../empty.cfg"
+Invoking: XDCtools
+"/home/linuxlite/ti/xdctools_3_32_00_06_core/xs" --xdcpath="/home/linuxlite/ti/tirtos_cc13xx_cc26xx_2_21_01_08/packages;/home/linuxlite/ti/tirtos_cc13xx_cc26xx_2_21_01_08/products/tidrivers_cc13xx_cc26xx_2_21_01_01/packages;/home/linuxlite/ti/tirtos_cc13xx_cc26xx_2_21_01_08/products/bios_6_46_01_38/packages;/home/linuxlite/ti/tirtos_cc13xx_cc26xx_2_21_01_08/products/uia_2_01_00_01/packages;" xdc.tools.configuro -o configPkg -t ti.targets.arm.elf.M3 -p ti.platforms.simplelink:CC2650F128 -r release -c "/home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS" --compileOptions "-mv7M3 --code_state=16 --float_support=none -me --include_path=\"/home/linuxlite/Downloads/sensortag-main/empty_CC2650STK_TI\" --include_path=\"/home/linuxlite/Downloads/sensortag-main/empty_CC2650STK_TI\" --include_path=\"/home/linuxlite/ti/tirtos_cc13xx_cc26xx_2_21_01_08/products/cc26xxware_2_24_03_17272\" --include_path=\"/home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include\" --define=ccs -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi  " "../empty.cfg"
+making package.mak (because of package.bld) ...
+generating interfaces for package configPkg (because package/package.xdc.inc is older than package.xdc) ...
+configuring empty.xem3 from package/cfg/empty_pem3.cfg ...
+generating custom ROM library makefile ... 
+Starting build of library sources ...
+making /home/linuxlite/Downloads/sensortag-main/empty_CC2650STK_TI/src/sysbios/rom_sysbios.aem3 ...
+gmake[1]: Entering directory `/home/linuxlite/Downloads/sensortag-main/empty_CC2650STK_TI/src/sysbios'
+clem3 /home/linuxlite/ti/tirtos_cc13xx_cc26xx_2_21_01_08/products/bios_6_46_01_38/packages/ti/sysbios/BIOS.c ...
+asmem3 /home/linuxlite/ti/tirtos_cc13xx_cc26xx_2_21_01_08/products/bios_6_46_01_38/packages/ti/sysbios/family/arm/m3/Hwi_asm.sv7M ...
+asmem3 /home/linuxlite/ti/tirtos_cc13xx_cc26xx_2_21_01_08/products/bios_6_46_01_38/packages/ti/sysbios/family/arm/m3/Hwi_asm_switch.sv7M ...
+asmem3 /home/linuxlite/ti/tirtos_cc13xx_cc26xx_2_21_01_08/products/bios_6_46_01_38/packages/ti/sysbios/family/arm/m3/IntrinsicsSupport_asm.sv7M ...
+asmem3 /home/linuxlite/ti/tirtos_cc13xx_cc26xx_2_21_01_08/products/bios_6_46_01_38/packages/ti/sysbios/family/arm/m3/TaskSupport_asm.sv7M ...
+arem3 rom_sysbios.obj m3_Hwi_asm.obj m3_Hwi_asm_switch.obj m3_IntrinsicsSupport_asm.obj m3_TaskSupport_asm.obj ...
+gmake[1]: Leaving directory `/home/linuxlite/Downloads/sensortag-main/empty_CC2650STK_TI/src/sysbios'
+Build of libraries done.
+clem3 package/cfg/empty_pem3.c ...
+"package/cfg/empty_pem3.c", line 7971: warning #112-D: statement is unreachable
+Finished building: "../empty.cfg"
+ 
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[1]: Nothing to be done for 'all'.
+Building file: "../ccfg.c"
+Invoking: Arm Compiler
+"/home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=none -me --include_path="/home/linuxlite/Downloads/sensortag-main/empty_CC2650STK_TI" --include_path="/home/linuxlite/Downloads/sensortag-main/empty_CC2650STK_TI" --include_path="/home/linuxlite/ti/tirtos_cc13xx_cc26xx_2_21_01_08/products/cc26xxware_2_24_03_17272" --include_path="/home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include" --define=ccs -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="ccfg.d_raw" --cmd_file="configPkg/compiler.opt"  "../ccfg.c"
+Finished building: "../ccfg.c"
+ 
+Building file: "../project_main.c"
+Invoking: Arm Compiler
+"/home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=none -me --include_path="/home/linuxlite/Downloads/sensortag-main/empty_CC2650STK_TI" --include_path="/home/linuxlite/Downloads/sensortag-main/empty_CC2650STK_TI" --include_path="/home/linuxlite/ti/tirtos_cc13xx_cc26xx_2_21_01_08/products/cc26xxware_2_24_03_17272" --include_path="/home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include" --define=ccs -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="project_main.d_raw" --cmd_file="configPkg/compiler.opt"  "../project_main.c"
+"../project_main.c", line 145: warning #179-D: variable "i2cMessage" was declared but never referenced
+Finished building: "../project_main.c"
+ 
+Building file: "../CC2650STK.c"
+Invoking: Arm Compiler
+"/home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=none -me --include_path="/home/linuxlite/Downloads/sensortag-main/empty_CC2650STK_TI" --include_path="/home/linuxlite/Downloads/sensortag-main/empty_CC2650STK_TI" --include_path="/home/linuxlite/ti/tirtos_cc13xx_cc26xx_2_21_01_08/products/cc26xxware_2_24_03_17272" --include_path="/home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include" --define=ccs -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="CC2650STK.d_raw" --cmd_file="configPkg/compiler.opt"  "../CC2650STK.c"
+Finished building: "../CC2650STK.c"
+ 
+Building file: "../sensors/hdc1000.c"
+Invoking: Arm Compiler
+"/home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=none -me --include_path="/home/linuxlite/Downloads/sensortag-main/empty_CC2650STK_TI" --include_path="/home/linuxlite/Downloads/sensortag-main/empty_CC2650STK_TI" --include_path="/home/linuxlite/ti/tirtos_cc13xx_cc26xx_2_21_01_08/products/cc26xxware_2_24_03_17272" --include_path="/home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include" --define=ccs -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="sensors/hdc1000.d_raw" --obj_directory="sensors" --cmd_file="configPkg/compiler.opt"  "../sensors/hdc1000.c"
+Finished building: "../sensors/hdc1000.c"
+ 
+Building file: "../sensors/bmp280.c"
+Invoking: Arm Compiler
+"/home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=none -me --include_path="/home/linuxlite/Downloads/sensortag-main/empty_CC2650STK_TI" --include_path="/home/linuxlite/Downloads/sensortag-main/empty_CC2650STK_TI" --include_path="/home/linuxlite/ti/tirtos_cc13xx_cc26xx_2_21_01_08/products/cc26xxware_2_24_03_17272" --include_path="/home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include" --define=ccs -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="sensors/bmp280.d_raw" --obj_directory="sensors" --cmd_file="configPkg/compiler.opt"  "../sensors/bmp280.c"
+Finished building: "../sensors/bmp280.c"
+ 
+Building file: "../sensors/opt3001.c"
+Invoking: Arm Compiler
+"/home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=none -me --include_path="/home/linuxlite/Downloads/sensortag-main/empty_CC2650STK_TI" --include_path="/home/linuxlite/Downloads/sensortag-main/empty_CC2650STK_TI" --include_path="/home/linuxlite/ti/tirtos_cc13xx_cc26xx_2_21_01_08/products/cc26xxware_2_24_03_17272" --include_path="/home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include" --define=ccs -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="sensors/opt3001.d_raw" --obj_directory="sensors" --cmd_file="configPkg/compiler.opt"  "../sensors/opt3001.c"
+Finished building: "../sensors/opt3001.c"
+ 
+Building file: "../sensors/tmp007.c"
+Invoking: Arm Compiler
+"/home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=none -me --include_path="/home/linuxlite/Downloads/sensortag-main/empty_CC2650STK_TI" --include_path="/home/linuxlite/Downloads/sensortag-main/empty_CC2650STK_TI" --include_path="/home/linuxlite/ti/tirtos_cc13xx_cc26xx_2_21_01_08/products/cc26xxware_2_24_03_17272" --include_path="/home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include" --define=ccs -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="sensors/tmp007.d_raw" --obj_directory="sensors" --cmd_file="configPkg/compiler.opt"  "../sensors/tmp007.c"
+Finished building: "../sensors/tmp007.c"
+ 
+Building file: "../wireless/CWC_CC2650_154Drv.c"
+Invoking: Arm Compiler
+"/home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=none -me --include_path="/home/linuxlite/Downloads/sensortag-main/empty_CC2650STK_TI" --include_path="/home/linuxlite/Downloads/sensortag-main/empty_CC2650STK_TI" --include_path="/home/linuxlite/ti/tirtos_cc13xx_cc26xx_2_21_01_08/products/cc26xxware_2_24_03_17272" --include_path="/home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include" --define=ccs -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="wireless/CWC_CC2650_154Drv.d_raw" --obj_directory="wireless" --cmd_file="configPkg/compiler.opt"  "../wireless/CWC_CC2650_154Drv.c"
+"../wireless/CWC_CC2650_154Drv.c", line 439: warning #515-D: a value of type "CWC_CC2650_IEEE154_simple_packet_struct_t *" cannot be assigned to an entity of type "uint8_t *"
+"../wireless/CWC_CC2650_154Drv.c", line 447: warning #112-D: statement is unreachable
+"../wireless/CWC_CC2650_154Drv.c", line 451: warning #112-D: statement is unreachable
+Finished building: "../wireless/CWC_CC2650_154Drv.c"
+ 
+Building file: "../sensors/mpu9250.c"
+Invoking: Arm Compiler
+"/home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=none -me --include_path="/home/linuxlite/Downloads/sensortag-main/empty_CC2650STK_TI" --include_path="/home/linuxlite/Downloads/sensortag-main/empty_CC2650STK_TI" --include_path="/home/linuxlite/ti/tirtos_cc13xx_cc26xx_2_21_01_08/products/cc26xxware_2_24_03_17272" --include_path="/home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include" --define=ccs -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="sensors/mpu9250.d_raw" --obj_directory="sensors" --cmd_file="configPkg/compiler.opt"  "../sensors/mpu9250.c"
+Finished building: "../sensors/mpu9250.c"
+ 
+Building file: "../wireless/ERRORS.c"
+Invoking: Arm Compiler
+"/home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=none -me --include_path="/home/linuxlite/Downloads/sensortag-main/empty_CC2650STK_TI" --include_path="/home/linuxlite/Downloads/sensortag-main/empty_CC2650STK_TI" --include_path="/home/linuxlite/ti/tirtos_cc13xx_cc26xx_2_21_01_08/products/cc26xxware_2_24_03_17272" --include_path="/home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include" --define=ccs -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="wireless/ERRORS.d_raw" --obj_directory="wireless" --cmd_file="configPkg/compiler.opt"  "../wireless/ERRORS.c"
+Finished building: "../wireless/ERRORS.c"
+ 
+Building file: "../wireless/CWC_IntegrTest.c"
+Invoking: Arm Compiler
+"/home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=none -me --include_path="/home/linuxlite/Downloads/sensortag-main/empty_CC2650STK_TI" --include_path="/home/linuxlite/Downloads/sensortag-main/empty_CC2650STK_TI" --include_path="/home/linuxlite/ti/tirtos_cc13xx_cc26xx_2_21_01_08/products/cc26xxware_2_24_03_17272" --include_path="/home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include" --define=ccs -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="wireless/CWC_IntegrTest.d_raw" --obj_directory="wireless" --cmd_file="configPkg/compiler.opt"  "../wireless/CWC_IntegrTest.c"
+"../wireless/CWC_IntegrTest.c", line 59: warning #112-D: statement is unreachable
+Finished building: "../wireless/CWC_IntegrTest.c"
+ 
+Building file: "../wireless/comm_lib.c"
+Invoking: Arm Compiler
+"/home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=none -me --include_path="/home/linuxlite/Downloads/sensortag-main/empty_CC2650STK_TI" --include_path="/home/linuxlite/Downloads/sensortag-main/empty_CC2650STK_TI" --include_path="/home/linuxlite/ti/tirtos_cc13xx_cc26xx_2_21_01_08/products/cc26xxware_2_24_03_17272" --include_path="/home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include" --define=ccs -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="wireless/comm_lib.d_raw" --obj_directory="wireless" --cmd_file="configPkg/compiler.opt"  "../wireless/comm_lib.c"
+"../wireless/comm_lib.c", line 141: warning #169-D: argument of type "volatile uint8_t *" is incompatible with parameter of type "uint8_t *"
+"../wireless/comm_lib.c", line 150: warning #515-D: a value of type "uint8_t *" cannot be assigned to an entity of type "int8_t"
+"../wireless/comm_lib.c", line 158: warning #515-D: a value of type "void *" cannot be assigned to an entity of type "int32_t"
+"../wireless/comm_lib.c", line 161: warning #169-D: argument of type "volatile uint8_t *" is incompatible with parameter of type "uint8_t *"
+"../wireless/comm_lib.c", line 195: warning #515-D: a value of type "uint8_t *" cannot be assigned to an entity of type "rfc_dataEntryGeneral_t *"
+"../wireless/comm_lib.c", line 196: warning #515-D: a value of type "uint8_t *" cannot be assigned to an entity of type "rfc_dataEntryGeneral_t *"
+"../wireless/comm_lib.c", line 197: warning #169-D: argument of type "rfc_dataEntryGeneral_t *" is incompatible with parameter of type "uint8_t *"
+"../wireless/comm_lib.c", line 199: warning #515-D: a value of type "rfc_dataEntryGeneral_t *" cannot be assigned to an entity of type "volatile uint8_t *"
+"../wireless/comm_lib.c", line 210: warning #515-D: a value of type "uint8_t *" cannot be assigned to an entity of type "rfc_dataEntryGeneral_t *"
+"../wireless/comm_lib.c", line 211: warning #515-D: a value of type "uint8_t *" cannot be assigned to an entity of type "rfc_dataEntryGeneral_t *"
+"../wireless/comm_lib.c", line 212: warning #169-D: argument of type "rfc_dataEntryGeneral_t *" is incompatible with parameter of type "uint8_t *"
+"../wireless/comm_lib.c", line 214: warning #515-D: a value of type "rfc_dataEntryGeneral_t *" cannot be assigned to an entity of type "volatile uint8_t *"
+"../wireless/comm_lib.c", line 246: warning #515-D: a value of type "uint8_t *" cannot be assigned to an entity of type "CWC_CC2650_IEEE154_simple_packet_struct_t *"
+"../wireless/comm_lib.c", line 248: warning #515-D: a value of type "uint8_t *" cannot be assigned to an entity of type "uint16_t *"
+"../wireless/comm_lib.c", line 275: warning #515-D: a value of type "uint8_t *" cannot be assigned to an entity of type "rfc_dataEntryGeneral_t *"
+Finished building: "../wireless/comm_lib.c"
+ 
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[2]: Nothing to be done for 'all'.
+Building target: "empty_CC2650STK_TI.out"
+Invoking: Arm Linker
+"/home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=none -me --define=ccs -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi -z -m"empty_CC2650STK_TI.map" --heap_size=0 --stack_size=256 -i"/home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/lib" -i"/home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="empty_CC2650STK_TI_linkInfo.xml" --rom_model -o "empty_CC2650STK_TI.out" "./CC2650STK.obj" "./ccfg.obj" "./project_main.obj" "./sensors/bmp280.obj" "./sensors/hdc1000.obj" "./sensors/mpu9250.obj" "./sensors/opt3001.obj" "./sensors/tmp007.obj" "./wireless/CWC_CC2650_154Drv.obj" "./wireless/CWC_IntegrTest.obj" "./wireless/ERRORS.obj" "./wireless/comm_lib.obj" "../CC2650STK.cmd" -l"configPkg/linker.cmd"  -l"/home/linuxlite/ti/tirtos_cc13xx_cc26xx_2_21_01_08/products/cc26xxware_2_24_03_17272/driverlib/bin/ccs/driverlib.lib" -llibc.a 
+<Linking>
+Finished building target: "empty_CC2650STK_TI.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project empty_CC2650STK_TI ****
+
+/home/linuxlite/ti/ccs1040/ccs/utils/bin/gmake -k -j 2 all -O 
+ 
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[1]: Nothing to be done for 'all'.
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[2]: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project empty_CC2650STK_TI ****
+
+/home/linuxlite/ti/ccs1040/ccs/utils/bin/gmake -k -j 2 all -O 
+ 
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[1]: Nothing to be done for 'all'.
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[2]: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Clean-only build of configuration Debug for project empty_CC2650STK_TI ****
+
+/home/linuxlite/ti/ccs1040/ccs/utils/bin/gmake -k -j 2 clean -O 
+ 
+rm -rf  "empty_CC2650STK_TI.hex"  "configPkg/linker.cmd" "configPkg/compiler.opt"  "empty_CC2650STK_TI.out" 
+rm -rf "CC2650STK.obj" "ccfg.obj" "empty.obj" 
+rm -rf "CC2650STK.d" "ccfg.d" "empty.d" 
+rm -rf  "configPkg/" 
+Finished clean
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project empty_CC2650STK_TI ****
+
+/home/linuxlite/ti/ccs1040/ccs/utils/bin/gmake -k -j 2 all -O 
+ 
+Building file: "../empty.cfg"
+Invoking: XDCtools
+"/home/linuxlite/ti/xdctools_3_32_00_06_core/xs" --xdcpath="/home/linuxlite/ti/tirtos_cc13xx_cc26xx_2_21_01_08/packages;/home/linuxlite/ti/tirtos_cc13xx_cc26xx_2_21_01_08/products/tidrivers_cc13xx_cc26xx_2_21_01_01/packages;/home/linuxlite/ti/tirtos_cc13xx_cc26xx_2_21_01_08/products/bios_6_46_01_38/packages;/home/linuxlite/ti/tirtos_cc13xx_cc26xx_2_21_01_08/products/uia_2_01_00_01/packages;" xdc.tools.configuro -o configPkg -t ti.targets.arm.elf.M3 -p ti.platforms.simplelink:CC2650F128 -r release -c "/home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS" --compileOptions "-mv7M3 --code_state=16 --float_support=none -me --include_path=\"/home/linuxlite/workspace_v10/empty_CC2650STK_TI\" --include_path=\"/home/linuxlite/workspace_v10/empty_CC2650STK_TI\" --include_path=\"/home/linuxlite/ti/tirtos_cc13xx_cc26xx_2_21_01_08/products/cc26xxware_2_24_03_17272\" --include_path=\"/home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include\" --define=ccs -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi  " "../empty.cfg"
+making package.mak (because of package.bld) ...
+generating interfaces for package configPkg (because package/package.xdc.inc is older than package.xdc) ...
+configuring empty.xem3 from package/cfg/empty_pem3.cfg ...
+generating custom ROM library makefile ... 
+Starting build of library sources ...
+making /home/linuxlite/workspace_v10/empty_CC2650STK_TI/src/sysbios/rom_sysbios.aem3 ...
+gmake[1]: Entering directory `/home/linuxlite/workspace_v10/empty_CC2650STK_TI/src/sysbios'
+clem3 /home/linuxlite/ti/tirtos_cc13xx_cc26xx_2_21_01_08/products/bios_6_46_01_38/packages/ti/sysbios/BIOS.c ...
+asmem3 /home/linuxlite/ti/tirtos_cc13xx_cc26xx_2_21_01_08/products/bios_6_46_01_38/packages/ti/sysbios/family/arm/m3/Hwi_asm.sv7M ...
+asmem3 /home/linuxlite/ti/tirtos_cc13xx_cc26xx_2_21_01_08/products/bios_6_46_01_38/packages/ti/sysbios/family/arm/m3/Hwi_asm_switch.sv7M ...
+asmem3 /home/linuxlite/ti/tirtos_cc13xx_cc26xx_2_21_01_08/products/bios_6_46_01_38/packages/ti/sysbios/family/arm/m3/IntrinsicsSupport_asm.sv7M ...
+asmem3 /home/linuxlite/ti/tirtos_cc13xx_cc26xx_2_21_01_08/products/bios_6_46_01_38/packages/ti/sysbios/family/arm/m3/TaskSupport_asm.sv7M ...
+arem3 rom_sysbios.obj m3_Hwi_asm.obj m3_Hwi_asm_switch.obj m3_IntrinsicsSupport_asm.obj m3_TaskSupport_asm.obj ...
+gmake[1]: Leaving directory `/home/linuxlite/workspace_v10/empty_CC2650STK_TI/src/sysbios'
+Build of libraries done.
+clem3 package/cfg/empty_pem3.c ...
+"package/cfg/empty_pem3.c", line 7971: warning #112-D: statement is unreachable
+Finished building: "../empty.cfg"
+ 
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[1]: Nothing to be done for 'all'.
+Building file: "../ccfg.c"
+Invoking: Arm Compiler
+"/home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=none -me --include_path="/home/linuxlite/workspace_v10/empty_CC2650STK_TI" --include_path="/home/linuxlite/workspace_v10/empty_CC2650STK_TI" --include_path="/home/linuxlite/ti/tirtos_cc13xx_cc26xx_2_21_01_08/products/cc26xxware_2_24_03_17272" --include_path="/home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include" --define=ccs -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="ccfg.d_raw" --cmd_file="configPkg/compiler.opt"  "../ccfg.c"
+Finished building: "../ccfg.c"
+ 
+Building file: "../project_main.c"
+Invoking: Arm Compiler
+"/home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=none -me --include_path="/home/linuxlite/workspace_v10/empty_CC2650STK_TI" --include_path="/home/linuxlite/workspace_v10/empty_CC2650STK_TI" --include_path="/home/linuxlite/ti/tirtos_cc13xx_cc26xx_2_21_01_08/products/cc26xxware_2_24_03_17272" --include_path="/home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include" --define=ccs -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="project_main.d_raw" --cmd_file="configPkg/compiler.opt"  "../project_main.c"
+"../project_main.c", line 77: warning #179-D: variable "i2c" was declared but never referenced
+"../project_main.c", line 78: warning #179-D: variable "i2cParams" was declared but never referenced
+"../project_main.c", line 117: warning #225-D: function "Init6LoWPAN" declared implicitly
+"../project_main.c", line 38: warning #179-D: variable "buttonHandle" was declared but never referenced
+"../project_main.c", line 39: warning #179-D: variable "buttonState" was declared but never referenced
+"../project_main.c", line 40: warning #179-D: variable "ledHandle" was declared but never referenced
+"../project_main.c", line 41: warning #179-D: variable "ledState" was declared but never referenced
+Finished building: "../project_main.c"
+ 
+Building file: "../CC2650STK.c"
+Invoking: Arm Compiler
+"/home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=none -me --include_path="/home/linuxlite/workspace_v10/empty_CC2650STK_TI" --include_path="/home/linuxlite/workspace_v10/empty_CC2650STK_TI" --include_path="/home/linuxlite/ti/tirtos_cc13xx_cc26xx_2_21_01_08/products/cc26xxware_2_24_03_17272" --include_path="/home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include" --define=ccs -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="CC2650STK.d_raw" --cmd_file="configPkg/compiler.opt"  "../CC2650STK.c"
+Finished building: "../CC2650STK.c"
+ 
+Building file: "../sensors/bmp280.c"
+Invoking: Arm Compiler
+"/home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=none -me --include_path="/home/linuxlite/workspace_v10/empty_CC2650STK_TI" --include_path="/home/linuxlite/workspace_v10/empty_CC2650STK_TI" --include_path="/home/linuxlite/ti/tirtos_cc13xx_cc26xx_2_21_01_08/products/cc26xxware_2_24_03_17272" --include_path="/home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include" --define=ccs -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="sensors/bmp280.d_raw" --obj_directory="sensors" --cmd_file="configPkg/compiler.opt"  "../sensors/bmp280.c"
+Finished building: "../sensors/bmp280.c"
+ 
+Building file: "../sensors/hdc1000.c"
+Invoking: Arm Compiler
+"/home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=none -me --include_path="/home/linuxlite/workspace_v10/empty_CC2650STK_TI" --include_path="/home/linuxlite/workspace_v10/empty_CC2650STK_TI" --include_path="/home/linuxlite/ti/tirtos_cc13xx_cc26xx_2_21_01_08/products/cc26xxware_2_24_03_17272" --include_path="/home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include" --define=ccs -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="sensors/hdc1000.d_raw" --obj_directory="sensors" --cmd_file="configPkg/compiler.opt"  "../sensors/hdc1000.c"
+Finished building: "../sensors/hdc1000.c"
+ 
+Building file: "../sensors/opt3001.c"
+Invoking: Arm Compiler
+"/home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=none -me --include_path="/home/linuxlite/workspace_v10/empty_CC2650STK_TI" --include_path="/home/linuxlite/workspace_v10/empty_CC2650STK_TI" --include_path="/home/linuxlite/ti/tirtos_cc13xx_cc26xx_2_21_01_08/products/cc26xxware_2_24_03_17272" --include_path="/home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include" --define=ccs -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="sensors/opt3001.d_raw" --obj_directory="sensors" --cmd_file="configPkg/compiler.opt"  "../sensors/opt3001.c"
+Finished building: "../sensors/opt3001.c"
+ 
+Building file: "../sensors/mpu9250.c"
+Invoking: Arm Compiler
+"/home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=none -me --include_path="/home/linuxlite/workspace_v10/empty_CC2650STK_TI" --include_path="/home/linuxlite/workspace_v10/empty_CC2650STK_TI" --include_path="/home/linuxlite/ti/tirtos_cc13xx_cc26xx_2_21_01_08/products/cc26xxware_2_24_03_17272" --include_path="/home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include" --define=ccs -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="sensors/mpu9250.d_raw" --obj_directory="sensors" --cmd_file="configPkg/compiler.opt"  "../sensors/mpu9250.c"
+Finished building: "../sensors/mpu9250.c"
+ 
+Building file: "../sensors/tmp007.c"
+Invoking: Arm Compiler
+"/home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=none -me --include_path="/home/linuxlite/workspace_v10/empty_CC2650STK_TI" --include_path="/home/linuxlite/workspace_v10/empty_CC2650STK_TI" --include_path="/home/linuxlite/ti/tirtos_cc13xx_cc26xx_2_21_01_08/products/cc26xxware_2_24_03_17272" --include_path="/home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include" --define=ccs -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="sensors/tmp007.d_raw" --obj_directory="sensors" --cmd_file="configPkg/compiler.opt"  "../sensors/tmp007.c"
+Finished building: "../sensors/tmp007.c"
+ 
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[2]: Nothing to be done for 'all'.
+Building target: "empty_CC2650STK_TI.out"
+Invoking: Arm Linker
+"/home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=none -me --define=ccs -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi -z -m"empty_CC2650STK_TI.map" --heap_size=0 --stack_size=256 -i"/home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/lib" -i"/home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="empty_CC2650STK_TI_linkInfo.xml" --rom_model -o "empty_CC2650STK_TI.out" "./CC2650STK.obj" "./ccfg.obj" "./project_main.obj" "./sensors/bmp280.obj" "./sensors/hdc1000.obj" "./sensors/mpu9250.obj" "./sensors/opt3001.obj" "./sensors/tmp007.obj" "../CC2650STK.cmd" -l"configPkg/linker.cmd"  -l"/home/linuxlite/ti/tirtos_cc13xx_cc26xx_2_21_01_08/products/cc26xxware_2_24_03_17272/driverlib/bin/ccs/driverlib.lib" -llibc.a 
+<Linking>
+ 
+ undefined   first referenced  
+  symbol         in file       
+ ---------   ----------------  
+ Init6LoWPAN ./project_main.obj
+ 
+error #10234-D: unresolved symbols remain
+error #10010: errors encountered during linking; "empty_CC2650STK_TI.out" not built
+ 
+>> Compilation failure
+makefile:149: recipe for target 'empty_CC2650STK_TI.out' failed
+gmake[1]: *** [empty_CC2650STK_TI.out] Error 1
+gmake: *** [all] Error 2
+makefile:145: recipe for target 'all' failed
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project empty_CC2650STK_TI ****
+
+/home/linuxlite/ti/ccs1040/ccs/utils/bin/gmake -k -j 2 all -O 
+ 
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[1]: Nothing to be done for 'all'.
+Building file: "../project_main.c"
+Invoking: Arm Compiler
+"/home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=none -me --include_path="/home/linuxlite/workspace_v10/empty_CC2650STK_TI" --include_path="/home/linuxlite/workspace_v10/empty_CC2650STK_TI" --include_path="/home/linuxlite/ti/tirtos_cc13xx_cc26xx_2_21_01_08/products/cc26xxware_2_24_03_17272" --include_path="/home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include" --define=ccs -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="project_main.d_raw" --cmd_file="configPkg/compiler.opt"  "../project_main.c"
+"../project_main.c", line 90: warning #179-D: variable "i2c" was declared but never referenced
+"../project_main.c", line 91: warning #179-D: variable "i2cParams" was declared but never referenced
+"../project_main.c", line 130: warning #225-D: function "Init6LoWPAN" declared implicitly
+"../project_main.c", line 38: warning #179-D: variable "buttonHandle" was declared but never referenced
+"../project_main.c", line 39: warning #179-D: variable "buttonState" was declared but never referenced
+"../project_main.c", line 41: warning #179-D: variable "ledState" was declared but never referenced
+Finished building: "../project_main.c"
+ 
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[2]: Nothing to be done for 'all'.
+Building target: "empty_CC2650STK_TI.out"
+Invoking: Arm Linker
+"/home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=none -me --define=ccs -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi -z -m"empty_CC2650STK_TI.map" --heap_size=0 --stack_size=256 -i"/home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/lib" -i"/home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="empty_CC2650STK_TI_linkInfo.xml" --rom_model -o "empty_CC2650STK_TI.out" "./CC2650STK.obj" "./ccfg.obj" "./project_main.obj" "./sensors/bmp280.obj" "./sensors/hdc1000.obj" "./sensors/mpu9250.obj" "./sensors/opt3001.obj" "./sensors/tmp007.obj" "../CC2650STK.cmd" -l"configPkg/linker.cmd"  -l"/home/linuxlite/ti/tirtos_cc13xx_cc26xx_2_21_01_08/products/cc26xxware_2_24_03_17272/driverlib/bin/ccs/driverlib.lib" -llibc.a 
+<Linking>
+ 
+ undefined   first referenced  
+  symbol         in file       
+ ---------   ----------------  
+ Init6LoWPAN ./project_main.obj
+ 
+error #10234-D: unresolved symbols remain
+error #10010: errors encountered during linking; "empty_CC2650STK_TI.out" not built
+ 
+>> Compilation failure
+makefile:149: recipe for target 'empty_CC2650STK_TI.out' failed
+makefile:145: recipe for target 'all' failed
+gmake[1]: *** [empty_CC2650STK_TI.out] Error 1
+gmake: *** [all] Error 2
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project empty_CC2650STK_TI ****
+
+/home/linuxlite/ti/ccs1040/ccs/utils/bin/gmake -k -j 2 all -O 
+ 
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[1]: Nothing to be done for 'all'.
+Building file: "../project_main.c"
+Invoking: Arm Compiler
+"/home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=none -me --include_path="/home/linuxlite/workspace_v10/empty_CC2650STK_TI" --include_path="/home/linuxlite/workspace_v10/empty_CC2650STK_TI" --include_path="/home/linuxlite/ti/tirtos_cc13xx_cc26xx_2_21_01_08/products/cc26xxware_2_24_03_17272" --include_path="/home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include" --define=ccs -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="project_main.d_raw" --cmd_file="configPkg/compiler.opt"  "../project_main.c"
+"../project_main.c", line 90: warning #179-D: variable "i2c" was declared but never referenced
+"../project_main.c", line 91: warning #179-D: variable "i2cParams" was declared but never referenced
+"../project_main.c", line 38: warning #179-D: variable "buttonHandle" was declared but never referenced
+"../project_main.c", line 39: warning #179-D: variable "buttonState" was declared but never referenced
+"../project_main.c", line 41: warning #179-D: variable "ledState" was declared but never referenced
+Finished building: "../project_main.c"
+ 
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[2]: Nothing to be done for 'all'.
+Building target: "empty_CC2650STK_TI.out"
+Invoking: Arm Linker
+"/home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=none -me --define=ccs -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi -z -m"empty_CC2650STK_TI.map" --heap_size=0 --stack_size=256 -i"/home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/lib" -i"/home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="empty_CC2650STK_TI_linkInfo.xml" --rom_model -o "empty_CC2650STK_TI.out" "./CC2650STK.obj" "./ccfg.obj" "./project_main.obj" "./sensors/bmp280.obj" "./sensors/hdc1000.obj" "./sensors/mpu9250.obj" "./sensors/opt3001.obj" "./sensors/tmp007.obj" "../CC2650STK.cmd" -l"configPkg/linker.cmd"  -l"/home/linuxlite/ti/tirtos_cc13xx_cc26xx_2_21_01_08/products/cc26xxware_2_24_03_17272/driverlib/bin/ccs/driverlib.lib" -llibc.a 
+<Linking>
+Finished building target: "empty_CC2650STK_TI.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project empty_CC2650STK_TI ****
+
+/home/linuxlite/ti/ccs1040/ccs/utils/bin/gmake -k -j 2 all -O 
+ 
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[1]: Nothing to be done for 'all'.
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[2]: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project empty_CC2650STK_TI ****
+
+/home/linuxlite/ti/ccs1040/ccs/utils/bin/gmake -k -j 2 all -O 
+ 
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[1]: Nothing to be done for 'all'.
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[2]: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project empty_CC2650STK_TI ****
+
+/home/linuxlite/ti/ccs1040/ccs/utils/bin/gmake -k -j 2 all -O 
+ 
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[1]: Nothing to be done for 'all'.
+Building file: "../project_main.c"
+Invoking: Arm Compiler
+"/home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=none -me --include_path="/home/linuxlite/workspace_v10/empty_CC2650STK_TI" --include_path="/home/linuxlite/workspace_v10/empty_CC2650STK_TI" --include_path="/home/linuxlite/ti/tirtos_cc13xx_cc26xx_2_21_01_08/products/cc26xxware_2_24_03_17272" --include_path="/home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include" --define=ccs -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="project_main.d_raw" --cmd_file="configPkg/compiler.opt"  "../project_main.c"
+"../project_main.c", line 90: warning #179-D: variable "i2c" was declared but never referenced
+"../project_main.c", line 91: warning #179-D: variable "i2cParams" was declared but never referenced
+Finished building: "../project_main.c"
+ 
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[2]: Nothing to be done for 'all'.
+Building target: "empty_CC2650STK_TI.out"
+Invoking: Arm Linker
+"/home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=none -me --define=ccs -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi -z -m"empty_CC2650STK_TI.map" --heap_size=0 --stack_size=256 -i"/home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/lib" -i"/home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="empty_CC2650STK_TI_linkInfo.xml" --rom_model -o "empty_CC2650STK_TI.out" "./CC2650STK.obj" "./ccfg.obj" "./project_main.obj" "./sensors/bmp280.obj" "./sensors/hdc1000.obj" "./sensors/mpu9250.obj" "./sensors/opt3001.obj" "./sensors/tmp007.obj" "../CC2650STK.cmd" -l"configPkg/linker.cmd"  -l"/home/linuxlite/ti/tirtos_cc13xx_cc26xx_2_21_01_08/products/cc26xxware_2_24_03_17272/driverlib/bin/ccs/driverlib.lib" -llibc.a 
+<Linking>
+Finished building target: "empty_CC2650STK_TI.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project empty_CC2650STK_TI ****
+
+/home/linuxlite/ti/ccs1040/ccs/utils/bin/gmake -k -j 2 all -O 
+ 
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[1]: Nothing to be done for 'all'.
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[2]: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project empty_CC2650STK_TI ****
+
+/home/linuxlite/ti/ccs1040/ccs/utils/bin/gmake -k -j 2 all -O 
+ 
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[1]: Nothing to be done for 'all'.
+Building file: "../project_main.c"
+Invoking: Arm Compiler
+"/home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=none -me --include_path="/home/linuxlite/workspace_v10/empty_CC2650STK_TI" --include_path="/home/linuxlite/workspace_v10/empty_CC2650STK_TI" --include_path="/home/linuxlite/ti/tirtos_cc13xx_cc26xx_2_21_01_08/products/cc26xxware_2_24_03_17272" --include_path="/home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include" --define=ccs -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="project_main.d_raw" --cmd_file="configPkg/compiler.opt"  "../project_main.c"
+ 
+>> Compilation failure
+subdir_rules.mk:7: recipe for target 'project_main.obj' failed
+"../project_main.c", line 54: error #150: variable "buttonConfig" has already been initialized
+"../project_main.c", line 59: error #150: variable "ledConfig" has already been initialized
+"../project_main.c", line 100: warning #179-D: variable "i2c" was declared but never referenced
+"../project_main.c", line 101: warning #179-D: variable "i2cParams" was declared but never referenced
+2 errors detected in the compilation of "../project_main.c".
+gmake: *** [project_main.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project empty_CC2650STK_TI ****
+
+/home/linuxlite/ti/ccs1040/ccs/utils/bin/gmake -k -j 2 all -O 
+ 
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[1]: Nothing to be done for 'all'.
+Building file: "../project_main.c"
+Invoking: Arm Compiler
+"/home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=none -me --include_path="/home/linuxlite/workspace_v10/empty_CC2650STK_TI" --include_path="/home/linuxlite/workspace_v10/empty_CC2650STK_TI" --include_path="/home/linuxlite/ti/tirtos_cc13xx_cc26xx_2_21_01_08/products/cc26xxware_2_24_03_17272" --include_path="/home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include" --define=ccs -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="project_main.d_raw" --cmd_file="configPkg/compiler.opt"  "../project_main.c"
+ 
+>> Compilation failure
+subdir_rules.mk:7: recipe for target 'project_main.obj' failed
+"../project_main.c", line 54: error #150: variable "buttonConfig" has already been initialized
+"../project_main.c", line 59: error #150: variable "ledConfig" has already been initialized
+"../project_main.c", line 101: warning #179-D: variable "i2c" was declared but never referenced
+"../project_main.c", line 102: warning #179-D: variable "i2cParams" was declared but never referenced
+2 errors detected in the compilation of "../project_main.c".
+gmake: *** [project_main.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project empty_CC2650STK_TI ****
+
+/home/linuxlite/ti/ccs1040/ccs/utils/bin/gmake -k -j 2 all -O 
+ 
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[1]: Nothing to be done for 'all'.
+Building file: "../project_main.c"
+Invoking: Arm Compiler
+"/home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=none -me --include_path="/home/linuxlite/workspace_v10/empty_CC2650STK_TI" --include_path="/home/linuxlite/workspace_v10/empty_CC2650STK_TI" --include_path="/home/linuxlite/ti/tirtos_cc13xx_cc26xx_2_21_01_08/products/cc26xxware_2_24_03_17272" --include_path="/home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include" --define=ccs -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="project_main.d_raw" --cmd_file="configPkg/compiler.opt"  "../project_main.c"
+"../project_main.c", line 90: warning #179-D: variable "i2c" was declared but never referenced
+"../project_main.c", line 91: warning #179-D: variable "i2cParams" was declared but never referenced
+Finished building: "../project_main.c"
+ 
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[2]: Nothing to be done for 'all'.
+Building target: "empty_CC2650STK_TI.out"
+Invoking: Arm Linker
+"/home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=none -me --define=ccs -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi -z -m"empty_CC2650STK_TI.map" --heap_size=0 --stack_size=256 -i"/home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/lib" -i"/home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="empty_CC2650STK_TI_linkInfo.xml" --rom_model -o "empty_CC2650STK_TI.out" "./CC2650STK.obj" "./ccfg.obj" "./project_main.obj" "./sensors/bmp280.obj" "./sensors/hdc1000.obj" "./sensors/mpu9250.obj" "./sensors/opt3001.obj" "./sensors/tmp007.obj" "../CC2650STK.cmd" -l"configPkg/linker.cmd"  -l"/home/linuxlite/ti/tirtos_cc13xx_cc26xx_2_21_01_08/products/cc26xxware_2_24_03_17272/driverlib/bin/ccs/driverlib.lib" -llibc.a 
+<Linking>
+Finished building target: "empty_CC2650STK_TI.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project empty_CC2650STK_TI ****
+
+/home/linuxlite/ti/ccs1040/ccs/utils/bin/gmake -k -j 2 all -O 
+ 
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[1]: Nothing to be done for 'all'.
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[2]: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project empty_CC2650STK_TI ****
+
+/home/linuxlite/ti/ccs1040/ccs/utils/bin/gmake -k -j 2 all -O 
+ 
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[1]: Nothing to be done for 'all'.
+Building file: "../project_main.c"
+Invoking: Arm Compiler
+"/home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=none -me --include_path="/home/linuxlite/workspace_v10/empty_CC2650STK_TI" --include_path="/home/linuxlite/workspace_v10/empty_CC2650STK_TI" --include_path="/home/linuxlite/ti/tirtos_cc13xx_cc26xx_2_21_01_08/products/cc26xxware_2_24_03_17272" --include_path="/home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include" --define=ccs -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="project_main.d_raw" --cmd_file="configPkg/compiler.opt"  "../project_main.c"
+ 
+>> Compilation failure
+subdir_rules.mk:7: recipe for target 'project_main.obj' failed
+"../project_main.c", line 96: error #20: identifier "i2c_Open" is undefined
+"../project_main.c", line 101: error #256: type name is not allowed
+"../project_main.c", line 101: error #32: expression must have arithmetic type
+"../project_main.c", line 101: warning #551-D: variable "i2c" is used before its value is set
+"../project_main.c", line 91: warning #179-D: variable "i2cParams" was declared but never referenced
+3 errors detected in the compilation of "../project_main.c".
+gmake: *** [project_main.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project empty_CC2650STK_TI ****
+
+/home/linuxlite/ti/ccs1040/ccs/utils/bin/gmake -k -j 2 all -O 
+ 
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[1]: Nothing to be done for 'all'.
+Building file: "../project_main.c"
+Invoking: Arm Compiler
+"/home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=none -me --include_path="/home/linuxlite/workspace_v10/empty_CC2650STK_TI" --include_path="/home/linuxlite/workspace_v10/empty_CC2650STK_TI" --include_path="/home/linuxlite/ti/tirtos_cc13xx_cc26xx_2_21_01_08/products/cc26xxware_2_24_03_17272" --include_path="/home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include" --define=ccs -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="project_main.d_raw" --cmd_file="configPkg/compiler.opt"  "../project_main.c"
+ 
+>> Compilation failure
+subdir_rules.mk:7: recipe for target 'project_main.obj' failed
+"../project_main.c", line 101: error #256: type name is not allowed
+"../project_main.c", line 101: error #32: expression must have arithmetic type
+"../project_main.c", line 101: warning #551-D: variable "i2c" is used before its value is set
+"../project_main.c", line 101: error #138: expression must be a modifiable lvalue
+"../project_main.c", line 91: warning #179-D: variable "i2cParams" was declared but never referenced
+3 errors detected in the compilation of "../project_main.c".
+gmake: *** [project_main.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project empty_CC2650STK_TI ****
+
+/home/linuxlite/ti/ccs1040/ccs/utils/bin/gmake -k -j 2 all -O 
+ 
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[1]: Nothing to be done for 'all'.
+Building file: "../project_main.c"
+Invoking: Arm Compiler
+"/home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=none -me --include_path="/home/linuxlite/workspace_v10/empty_CC2650STK_TI" --include_path="/home/linuxlite/workspace_v10/empty_CC2650STK_TI" --include_path="/home/linuxlite/ti/tirtos_cc13xx_cc26xx_2_21_01_08/products/cc26xxware_2_24_03_17272" --include_path="/home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include" --define=ccs -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="project_main.d_raw" --cmd_file="configPkg/compiler.opt"  "../project_main.c"
+ 
+>> Compilation failure
+subdir_rules.mk:7: recipe for target 'project_main.obj' failed
+"../project_main.c", line 101: error #66: expected a ";"
+"../project_main.c", line 90: warning #179-D: variable "i2c" was declared but never referenced
+"../project_main.c", line 91: warning #179-D: variable "i2cParams" was declared but never referenced
+1 error detected in the compilation of "../project_main.c".
+gmake: *** [project_main.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project empty_CC2650STK_TI ****
+
+/home/linuxlite/ti/ccs1040/ccs/utils/bin/gmake -k -j 2 all -O 
+ 
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[1]: Nothing to be done for 'all'.
+Building file: "../project_main.c"
+Invoking: Arm Compiler
+"/home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=none -me --include_path="/home/linuxlite/workspace_v10/empty_CC2650STK_TI" --include_path="/home/linuxlite/workspace_v10/empty_CC2650STK_TI" --include_path="/home/linuxlite/ti/tirtos_cc13xx_cc26xx_2_21_01_08/products/cc26xxware_2_24_03_17272" --include_path="/home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include" --define=ccs -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="project_main.d_raw" --cmd_file="configPkg/compiler.opt"  "../project_main.c"
+Finished building: "../project_main.c"
+ 
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[2]: Nothing to be done for 'all'.
+Building target: "empty_CC2650STK_TI.out"
+Invoking: Arm Linker
+"/home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=none -me --define=ccs -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi -z -m"empty_CC2650STK_TI.map" --heap_size=0 --stack_size=256 -i"/home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/lib" -i"/home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="empty_CC2650STK_TI_linkInfo.xml" --rom_model -o "empty_CC2650STK_TI.out" "./CC2650STK.obj" "./ccfg.obj" "./project_main.obj" "./sensors/bmp280.obj" "./sensors/hdc1000.obj" "./sensors/mpu9250.obj" "./sensors/opt3001.obj" "./sensors/tmp007.obj" "../CC2650STK.cmd" -l"configPkg/linker.cmd"  -l"/home/linuxlite/ti/tirtos_cc13xx_cc26xx_2_21_01_08/products/cc26xxware_2_24_03_17272/driverlib/bin/ccs/driverlib.lib" -llibc.a 
+<Linking>
+Finished building target: "empty_CC2650STK_TI.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project empty_CC2650STK_TI ****
+
+/home/linuxlite/ti/ccs1040/ccs/utils/bin/gmake -k -j 2 all -O 
+ 
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[1]: Nothing to be done for 'all'.
+Building file: "../project_main.c"
+Invoking: Arm Compiler
+"/home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=none -me --include_path="/home/linuxlite/workspace_v10/empty_CC2650STK_TI" --include_path="/home/linuxlite/workspace_v10/empty_CC2650STK_TI" --include_path="/home/linuxlite/ti/tirtos_cc13xx_cc26xx_2_21_01_08/products/cc26xxware_2_24_03_17272" --include_path="/home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include" --define=ccs -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="project_main.d_raw" --cmd_file="configPkg/compiler.opt"  "../project_main.c"
+ 
+>> Compilation failure
+subdir_rules.mk:7: recipe for target 'project_main.obj' failed
+"../project_main.c", line 115: error #145: a value of type "double" cannot be used to initialize an entity of type "String"
+1 error detected in the compilation of "../project_main.c".
+gmake: *** [project_main.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project empty_CC2650STK_TI ****
+
+/home/linuxlite/ti/ccs1040/ccs/utils/bin/gmake -k -j 2 all -O 
+ 
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[1]: Nothing to be done for 'all'.
+Building file: "../project_main.c"
+Invoking: Arm Compiler
+"/home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=none -me --include_path="/home/linuxlite/workspace_v10/empty_CC2650STK_TI" --include_path="/home/linuxlite/workspace_v10/empty_CC2650STK_TI" --include_path="/home/linuxlite/ti/tirtos_cc13xx_cc26xx_2_21_01_08/products/cc26xxware_2_24_03_17272" --include_path="/home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include" --define=ccs -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="project_main.d_raw" --cmd_file="configPkg/compiler.opt"  "../project_main.c"
+Finished building: "../project_main.c"
+ 
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[2]: Nothing to be done for 'all'.
+Building target: "empty_CC2650STK_TI.out"
+Invoking: Arm Linker
+"/home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=none -me --define=ccs -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi -z -m"empty_CC2650STK_TI.map" --heap_size=0 --stack_size=256 -i"/home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/lib" -i"/home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="empty_CC2650STK_TI_linkInfo.xml" --rom_model -o "empty_CC2650STK_TI.out" "./CC2650STK.obj" "./ccfg.obj" "./project_main.obj" "./sensors/bmp280.obj" "./sensors/hdc1000.obj" "./sensors/mpu9250.obj" "./sensors/opt3001.obj" "./sensors/tmp007.obj" "../CC2650STK.cmd" -l"configPkg/linker.cmd"  -l"/home/linuxlite/ti/tirtos_cc13xx_cc26xx_2_21_01_08/products/cc26xxware_2_24_03_17272/driverlib/bin/ccs/driverlib.lib" -llibc.a 
+<Linking>
+Finished building target: "empty_CC2650STK_TI.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project empty_CC2650STK_TI ****
+
+/home/linuxlite/ti/ccs1040/ccs/utils/bin/gmake -k -j 2 all -O 
+ 
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[1]: Nothing to be done for 'all'.
+Building file: "../project_main.c"
+Invoking: Arm Compiler
+"/home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=none -me --include_path="/home/linuxlite/workspace_v10/empty_CC2650STK_TI" --include_path="/home/linuxlite/workspace_v10/empty_CC2650STK_TI" --include_path="/home/linuxlite/ti/tirtos_cc13xx_cc26xx_2_21_01_08/products/cc26xxware_2_24_03_17272" --include_path="/home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include" --define=ccs -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="project_main.d_raw" --cmd_file="configPkg/compiler.opt"  "../project_main.c"
+"../project_main.c", line 116: warning #183-D: argument is incompatible with corresponding format string conversion
+Finished building: "../project_main.c"
+ 
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[2]: Nothing to be done for 'all'.
+Building target: "empty_CC2650STK_TI.out"
+Invoking: Arm Linker
+"/home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=none -me --define=ccs -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi -z -m"empty_CC2650STK_TI.map" --heap_size=0 --stack_size=256 -i"/home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/lib" -i"/home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="empty_CC2650STK_TI_linkInfo.xml" --rom_model -o "empty_CC2650STK_TI.out" "./CC2650STK.obj" "./ccfg.obj" "./project_main.obj" "./sensors/bmp280.obj" "./sensors/hdc1000.obj" "./sensors/mpu9250.obj" "./sensors/opt3001.obj" "./sensors/tmp007.obj" "../CC2650STK.cmd" -l"configPkg/linker.cmd"  -l"/home/linuxlite/ti/tirtos_cc13xx_cc26xx_2_21_01_08/products/cc26xxware_2_24_03_17272/driverlib/bin/ccs/driverlib.lib" -llibc.a 
+<Linking>
+Finished building target: "empty_CC2650STK_TI.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project empty_CC2650STK_TI ****
+
+/home/linuxlite/ti/ccs1040/ccs/utils/bin/gmake -k -j 2 all -O 
+ 
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[1]: Nothing to be done for 'all'.
+Building file: "../project_main.c"
+Invoking: Arm Compiler
+"/home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=none -me --include_path="/home/linuxlite/workspace_v10/empty_CC2650STK_TI" --include_path="/home/linuxlite/workspace_v10/empty_CC2650STK_TI" --include_path="/home/linuxlite/ti/tirtos_cc13xx_cc26xx_2_21_01_08/products/cc26xxware_2_24_03_17272" --include_path="/home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include" --define=ccs -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="project_main.d_raw" --cmd_file="configPkg/compiler.opt"  "../project_main.c"
+"../project_main.c", line 116: warning #169-D: argument of type "I2C_Handle" is incompatible with parameter of type "const char *__restrict__"
+Finished building: "../project_main.c"
+ 
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[2]: Nothing to be done for 'all'.
+Building target: "empty_CC2650STK_TI.out"
+Invoking: Arm Linker
+"/home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=none -me --define=ccs -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi -z -m"empty_CC2650STK_TI.map" --heap_size=0 --stack_size=256 -i"/home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/lib" -i"/home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="empty_CC2650STK_TI_linkInfo.xml" --rom_model -o "empty_CC2650STK_TI.out" "./CC2650STK.obj" "./ccfg.obj" "./project_main.obj" "./sensors/bmp280.obj" "./sensors/hdc1000.obj" "./sensors/mpu9250.obj" "./sensors/opt3001.obj" "./sensors/tmp007.obj" "../CC2650STK.cmd" -l"configPkg/linker.cmd"  -l"/home/linuxlite/ti/tirtos_cc13xx_cc26xx_2_21_01_08/products/cc26xxware_2_24_03_17272/driverlib/bin/ccs/driverlib.lib" -llibc.a 
+<Linking>
+Finished building target: "empty_CC2650STK_TI.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project empty_CC2650STK_TI ****
+
+/home/linuxlite/ti/ccs1040/ccs/utils/bin/gmake -k -j 2 all -O 
+ 
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[1]: Nothing to be done for 'all'.
+Building file: "../project_main.c"
+Invoking: Arm Compiler
+"/home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=none -me --include_path="/home/linuxlite/workspace_v10/empty_CC2650STK_TI" --include_path="/home/linuxlite/workspace_v10/empty_CC2650STK_TI" --include_path="/home/linuxlite/ti/tirtos_cc13xx_cc26xx_2_21_01_08/products/cc26xxware_2_24_03_17272" --include_path="/home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include" --define=ccs -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="project_main.d_raw" --cmd_file="configPkg/compiler.opt"  "../project_main.c"
+ 
+>> Compilation failure
+subdir_rules.mk:7: recipe for target 'project_main.obj' failed
+"../project_main.c", line 116: error #20: identifier "l2C_Handle" is undefined
+1 error detected in the compilation of "../project_main.c".
+gmake: *** [project_main.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project empty_CC2650STK_TI ****
+
+/home/linuxlite/ti/ccs1040/ccs/utils/bin/gmake -k -j 2 all -O 
+ 
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[1]: Nothing to be done for 'all'.
+Building file: "../project_main.c"
+Invoking: Arm Compiler
+"/home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=none -me --include_path="/home/linuxlite/workspace_v10/empty_CC2650STK_TI" --include_path="/home/linuxlite/workspace_v10/empty_CC2650STK_TI" --include_path="/home/linuxlite/ti/tirtos_cc13xx_cc26xx_2_21_01_08/products/cc26xxware_2_24_03_17272" --include_path="/home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include" --define=ccs -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="project_main.d_raw" --cmd_file="configPkg/compiler.opt"  "../project_main.c"
+"../project_main.c", line 116: warning #169-D: argument of type "I2C_Handle" is incompatible with parameter of type "const char *__restrict__"
+Finished building: "../project_main.c"
+ 
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[2]: Nothing to be done for 'all'.
+Building target: "empty_CC2650STK_TI.out"
+Invoking: Arm Linker
+"/home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=none -me --define=ccs -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi -z -m"empty_CC2650STK_TI.map" --heap_size=0 --stack_size=256 -i"/home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/lib" -i"/home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="empty_CC2650STK_TI_linkInfo.xml" --rom_model -o "empty_CC2650STK_TI.out" "./CC2650STK.obj" "./ccfg.obj" "./project_main.obj" "./sensors/bmp280.obj" "./sensors/hdc1000.obj" "./sensors/mpu9250.obj" "./sensors/opt3001.obj" "./sensors/tmp007.obj" "../CC2650STK.cmd" -l"configPkg/linker.cmd"  -l"/home/linuxlite/ti/tirtos_cc13xx_cc26xx_2_21_01_08/products/cc26xxware_2_24_03_17272/driverlib/bin/ccs/driverlib.lib" -llibc.a 
+<Linking>
+Finished building target: "empty_CC2650STK_TI.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project empty_CC2650STK_TI ****
+
+/home/linuxlite/ti/ccs1040/ccs/utils/bin/gmake -k -j 2 all -O 
+ 
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[1]: Nothing to be done for 'all'.
+Building file: "../project_main.c"
+Invoking: Arm Compiler
+"/home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=none -me --include_path="/home/linuxlite/workspace_v10/empty_CC2650STK_TI" --include_path="/home/linuxlite/workspace_v10/empty_CC2650STK_TI" --include_path="/home/linuxlite/ti/tirtos_cc13xx_cc26xx_2_21_01_08/products/cc26xxware_2_24_03_17272" --include_path="/home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include" --define=ccs -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="project_main.d_raw" --cmd_file="configPkg/compiler.opt"  "../project_main.c"
+"../project_main.c", line 117: warning #169-D: argument of type "I2C_Handle" is incompatible with parameter of type "const char *__restrict__"
+"../project_main.c", line 116: warning #179-D: variable "i2c8" was declared but never referenced
+Finished building: "../project_main.c"
+ 
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[2]: Nothing to be done for 'all'.
+Building target: "empty_CC2650STK_TI.out"
+Invoking: Arm Linker
+"/home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=none -me --define=ccs -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi -z -m"empty_CC2650STK_TI.map" --heap_size=0 --stack_size=256 -i"/home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/lib" -i"/home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="empty_CC2650STK_TI_linkInfo.xml" --rom_model -o "empty_CC2650STK_TI.out" "./CC2650STK.obj" "./ccfg.obj" "./project_main.obj" "./sensors/bmp280.obj" "./sensors/hdc1000.obj" "./sensors/mpu9250.obj" "./sensors/opt3001.obj" "./sensors/tmp007.obj" "../CC2650STK.cmd" -l"configPkg/linker.cmd"  -l"/home/linuxlite/ti/tirtos_cc13xx_cc26xx_2_21_01_08/products/cc26xxware_2_24_03_17272/driverlib/bin/ccs/driverlib.lib" -llibc.a 
+<Linking>
+Finished building target: "empty_CC2650STK_TI.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project empty_CC2650STK_TI ****
+
+/home/linuxlite/ti/ccs1040/ccs/utils/bin/gmake -k -j 2 all -O 
+ 
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[1]: Nothing to be done for 'all'.
+Building file: "../project_main.c"
+Invoking: Arm Compiler
+"/home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=none -me --include_path="/home/linuxlite/workspace_v10/empty_CC2650STK_TI" --include_path="/home/linuxlite/workspace_v10/empty_CC2650STK_TI" --include_path="/home/linuxlite/ti/tirtos_cc13xx_cc26xx_2_21_01_08/products/cc26xxware_2_24_03_17272" --include_path="/home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include" --define=ccs -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="project_main.d_raw" --cmd_file="configPkg/compiler.opt"  "../project_main.c"
+Finished building: "../project_main.c"
+ 
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[2]: Nothing to be done for 'all'.
+Building target: "empty_CC2650STK_TI.out"
+Invoking: Arm Linker
+"/home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=none -me --define=ccs -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi -z -m"empty_CC2650STK_TI.map" --heap_size=0 --stack_size=256 -i"/home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/lib" -i"/home/linuxlite/ti/ccs1040/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="empty_CC2650STK_TI_linkInfo.xml" --rom_model -o "empty_CC2650STK_TI.out" "./CC2650STK.obj" "./ccfg.obj" "./project_main.obj" "./sensors/bmp280.obj" "./sensors/hdc1000.obj" "./sensors/mpu9250.obj" "./sensors/opt3001.obj" "./sensors/tmp007.obj" "../CC2650STK.cmd" -l"configPkg/linker.cmd"  -l"/home/linuxlite/ti/tirtos_cc13xx_cc26xx_2_21_01_08/products/cc26xxware_2_24_03_17272/driverlib/bin/ccs/driverlib.lib" -llibc.a 
+<Linking>
+Finished building target: "empty_CC2650STK_TI.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project empty_CC2650STK_TI ****
+
+/home/linuxlite/ti/ccs1040/ccs/utils/bin/gmake -k -j 2 all -O 
+ 
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[1]: Nothing to be done for 'all'.
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[2]: Nothing to be done for 'all'.
+
+**** Build Finished ****

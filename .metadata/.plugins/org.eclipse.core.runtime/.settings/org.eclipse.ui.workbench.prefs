@@ -1,0 +1,11 @@
+//org.eclipse.ui.commands/state/org.eclipse.ui.navigator.resources.nested.changeProjectPresentation/org.eclipse.ui.commands.radioState=false
+RUN_IN_BACKGROUND=false
+UIActivities.com.ti.ccstudio.activities.RSEActivity=true
+com.ti.ccstudio.debug.ui.symbolFontColor=0,128,255
+com.ti.ccstudio.memory.ui.view.rendering.colorBackground=30,30,30
+com.ti.ccstudio.memory.ui.view.rendering.colorSelection=0,120,215
+com.ti.ccstudio.memory.ui.view.rendering.colorText=170,170,170
+eclipse.preferences.version=1
+org.eclipse.ui.workbench.INFORMATION_BACKGROUND=81,86,88
+org.eclipse.ui.workbench.INFORMATION_FOREGROUND=216,216,216
+overriddenByCSS=,com.ti.ccstudio.memory.ui.view.rendering.colorBackground,com.ti.ccstudio.memory.ui.view.rendering.colorText,com.ti.ccstudio.memory.ui.view.rendering.colorSelection,com.ti.ccstudio.debug.ui.symbolFontColor,org.eclipse.ui.workbench.INFORMATION_BACKGROUND,org.eclipse.ui.workbench.INFORMATION_FOREGROUND,
