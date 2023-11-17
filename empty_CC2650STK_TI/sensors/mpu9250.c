@@ -10,6 +10,9 @@
 
 #include <inttypes.h>
 #include <math.h>
+#include <stdint.h>
+#include <stdio.h>
+#include <time.h>
 
 #include <xdc/runtime/System.h>
 #include <ti/sysbios/knl/Task.h>
@@ -520,4 +523,5 @@ void mpu9250_get_data(I2C_Handle *i2c, float *ax, float *ay, float *az, float *g
     *gx = (float)mx * gRes;
     *gy = (float)my * gRes;
     *gz = (float)mz * gRes;
+	}
 }
